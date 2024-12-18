@@ -137,6 +137,10 @@ input[type='checkbox']:checked ~ .back {
 	@apply text-lg lg:text-4xl lg:leading-tight font-semibold;
 }
 
+.headline-3 {
+	@apply text-lg font-black text-gray-200 mt-1
+}
+
 /* utilities */
 
 .container {

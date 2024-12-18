@@ -193,17 +193,17 @@ const SchufflePage: React.FC = () => {
 		<>
 			<Modal open={open} onClose={() => setOpen(false)}>
 				<div className='max-md:py-10'>
-					<div className='mx-auto my-4 px-3'>
-						<h3 className='text-lg font-black text-gray-200'>opis karty</h3>
-						<p className='text-sm text-white'>{modalDesc[0]}</p>
-						<h3 className='text-lg font-black text-gray-200'>
+					<div className='mx-auto my-4 px-3 text-sm text-white'>
+						<h3 className='headline-3'>opis karty</h3>
+						<p>{modalDesc[0]}</p>
+						<h3 className='headline-3'>
 							karta do góry: znaczenie
 						</h3>
-						<p className='text-sm text-white'>{modalDesc[1]}</p>
-						<h3 className='text-lg font-black text-gray-200'>
+						<p>{modalDesc[1]}</p>
+						<h3 className='headline-3'>
 							karta w dół: znaczenie
 						</h3>
-						<p className='text-sm text-white'>{modalDesc[2]}</p>
+						<p>{modalDesc[2]}</p>
 					</div>
 				</div>
 			</Modal>
@@ -220,7 +220,8 @@ const SchufflePage: React.FC = () => {
 							data-set={key}
 							data-set-name={item.name}
 							data-set-image={
-								import.meta.env.VITE_BACKEND_URL + '/images' + item.image
+								//import.meta.env.VITE_BACKEND_URL + '/images' + item.image
+								item.image
 							}
 							data-set-desc={
 								item.desc + '#$%' + item.meaningUp + '#$%' + item.meaningRev
