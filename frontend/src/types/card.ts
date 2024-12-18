@@ -1,5 +1,6 @@
 export type Card = {
-	id: string;
+	id: object;
+    suit?: string,
 	name: string;
 	meaningUp: string;
     meaningRev: string;

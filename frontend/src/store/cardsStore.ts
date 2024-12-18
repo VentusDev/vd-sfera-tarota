@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { create } from 'zustand';
 import { devtools, subscribeWithSelector } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
-
+import { CARDS_DATA } from '@/lib/mockCards';
 
 //const beUrl = import.meta.env.VITE_BACKEND_URL;
 
@@ -53,11 +53,12 @@ const createCardsSlice: StateCreator<
 		try {
 			//const response = await axios.get(`${API_CARDS_URL}${api.list}`);
 			const response = await axios.get(`cardsJson.json`);
-			console.log(response);
+			//.log(response);
 			
 			set({
 				//cards: response.data.data
-				cards: response.data
+				//cards: response.data
+				cards: CARDS_DATA
 			});
 			return response;
 		} catch (error) {
