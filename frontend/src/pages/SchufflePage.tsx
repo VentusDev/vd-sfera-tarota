@@ -4,7 +4,6 @@ import Modal from '@/components/Modal';
 import { Button } from '@/components/ui/button';
 import toast from 'react-hot-toast';
 import { useEffectOnce } from '@/components/hooks/useEffectOnce';
-import { Card } from '@/types/card';
 
 const SchufflePage: React.FC = () => {
 	const demoToast = () => {

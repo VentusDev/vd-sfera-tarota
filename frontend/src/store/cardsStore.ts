@@ -1,17 +1,16 @@
 import axios from 'axios';
 import { StateCreator } from 'zustand';
 import { Card } from '@/types/card.ts';
-import { api } from './authVar.ts';
+//import { api } from './authVar.ts';
 import toast from 'react-hot-toast';
 import { create } from 'zustand';
 import { devtools, subscribeWithSelector } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 
 
-const beUrl = import.meta.env.VITE_BACKEND_URL;
+//const beUrl = import.meta.env.VITE_BACKEND_URL;
 
-const API_CARDS_URL =
-	import.meta.env.MODE === 'development' ? beUrl + '/api/cards' : '/api/cards';
+//const API_CARDS_URL = import.meta.env.MODE === 'development' ? beUrl + '/api/cards' : '/api/cards';
 
 axios.defaults.withCredentials = true;
 
@@ -52,9 +51,13 @@ const createCardsSlice: StateCreator<
 	reset: () => set(() => initialState),
 	fetchCardsList: async () => {
 		try {
-			const response = await axios.get(`${API_CARDS_URL}${api.list}`);
+			//const response = await axios.get(`${API_CARDS_URL}${api.list}`);
+			const response = await axios.get(`cardsJson.json`);
+			console.log(response);
+			
 			set({
-				cards: response.data.data
+				//cards: response.data.data
+				cards: response.data
 			});
 			return response;
 		} catch (error) {

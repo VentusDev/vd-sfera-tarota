@@ -71,7 +71,7 @@ const Contact = () => {
 						))}
 					</div>
 				</div>
-				<form action='https://getform.io/f/bkkkrjwb' method='POST' className=''>
+				<form /* action='https://getform.io/f/bkkkrjwb' */ method='POST' className=''>
 					<div className='xl:pl-10 2xl:pl-20'>
 						<div className='mb-4'>
 							<label htmlFor='name' className='label'>
@@ -118,6 +118,7 @@ const Contact = () => {
 						<button
 							type='submit'
 							className='btn btn-secondary [&]:max-w-full w-full justify-center'
+							onClick={()=>toast.success('Wysyłanie maili nie jest możliwe w wersji DEMO')}
 						>
 							wyślij
 						</button>
