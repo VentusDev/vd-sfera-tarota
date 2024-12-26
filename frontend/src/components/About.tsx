@@ -18,7 +18,7 @@ const About = () => {
 				<h2 className='headline-2 text-end my-5'>o nas</h2>
 				<div className='glass-bg p-7 md:p-10'>
 					<p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
-						Sfera Tarota to mijesce, w którym można wyczuć mistyczną aurę.<br/> Od lat zajmujemy się tematyką Tarota oraz wszelakiego wróżbiarstwa. Postanowiliśmy podzielić się naszą wiedzą z aktualnymi pasjonatami, jak również osobami wkraczającymi w ten mistyczny świat. <br/> Oprócz tematycznych przedmiotów oferujemy również usługi związane z czytaniem kart. Sesje prowadzone są fizycznie jak również w opcji online poprzez wykorzystanie aplikkacji do czytania kart. <br/> Serdecznie zapraszamy do skorzystania z naszych usług! 
+						Sfera Tarota to miejsce, w którym można wyczuć mistyczną aurę.<br/> Od lat zajmujemy się tematyką Tarota oraz wszelakiego wróżbiarstwa. Postanowiliśmy podzielić się naszą wiedzą z aktualnymi pasjonatami, jak również osobami wkraczającymi w ten mistyczny świat. <br/> Oprócz tematycznych przedmiotów oferujemy również usługi związane z czytaniem kart. Sesje prowadzone są fizycznie jak również w opcji online poprzez wykorzystanie aplikkacji do czytania kart. <br/> Serdecznie zapraszamy do skorzystania z naszych usług! 
 					</p>
 
 					<div className='flex flex-wrap items-center gap-4 md:gap-7'>

@@ -56,11 +56,11 @@ const SchufflePage: React.FC = () => {
 	const [schuffle, setSchuffle] = useState(0);
 	const [selectedCards, setSelectedCards] = useState<any[]>([]);
 
-	const fetchList = async () => {
-		await fetchCardsList();
-	};
 
 	useEffect(() => {
+		const fetchList = async () => {
+			await fetchCardsList();
+		};	
 		fetchList();
 	}, []);
 
